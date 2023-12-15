@@ -338,6 +338,18 @@ topic에서 main을 rebase 한 이후, 다시 main으로 이동 fast-forward 병
 # 10-1 버전 되돌리기 reset
 ## 01 버전 되돌리기 reset과 옵션
 
+HEAD~2의 내용으로 작업 디렉토리와 스테이징 영역, 깃 저장소에 복사
+- $ git reset --hard HEAD~2
+
+HEAD~2의 내용으로 스테이징 영역과 깃 저장소에 복사
+- $ git reset --mixed HEAD~2
+
+HEAD~2의 내용으로 깃 저장소에 복사
+- $ git reset --soft HEAD~2
+
+이전에 수행한 reset을 바로 취소하는 명령
+- $ git reset --hard ORIG_HEAD
+
 ## 02 reset 정리, checkout과 reset 비교
 
 reset의 3가지 방식
